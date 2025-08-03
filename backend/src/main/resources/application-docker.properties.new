@@ -1,0 +1,6 @@
+# Enable security debug logging
+logging.level.org.springframework.security=DEBUG
+logging.level.com.journal.backend=DEBUG
+
+# Output security info
+spring.security.debug=true
