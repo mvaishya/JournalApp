@@ -2,10 +2,11 @@ FROM openjdk:11-jdk-slim
 
 WORKDIR /app
 
-COPY gradlew .
+COPY gradlew ./
 COPY gradle gradle
-COPY build.gradle .
-COPY settings.gradle .
+COPY gradle/wrapper gradle/wrapper
+COPY build.gradle ./
+COPY settings.gradle ./
 COPY src src
 
 RUN chmod +x gradlew
